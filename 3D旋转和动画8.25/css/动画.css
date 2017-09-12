@@ -1,0 +1,31 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-25 16:53:41
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-25 17:06:38
+*/
+.box{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	margin: 50px auto;
+	animation: bianse 5s ease 1s;
+}
+@keyframes bianse{
+    0%{
+    	background: red;
+    }
+    20%{
+    	background: blue;
+    }
+    50%{
+    	background: chocolate;
+    }
+    70%{
+    	background: gold;
+    }
+    100%{
+    	background: black;
+    }
+
+}
