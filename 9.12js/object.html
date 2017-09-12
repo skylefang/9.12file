@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>object</title>
+</head>
+<body>
+    <script>
+        /*function student(name,age,sex,classes){
+        	this.name=name;
+        	this.age=age;
+        	this.sex=sex;
+        	this.classes=classes;
+        	this.say=function(){
+        		alert('1')
+        	}
+        }
+        let zhangsan=new student('zhangsan',20,'nv','wuif1707-1')
+        console.log(zhangsan);
+        zhangsan.say();*/
+
+
+        // Iphone8 price
+    	function Iphone(brand,size,color,language,outlook,RAM,ROM,system){
+    		this.brand=brand;
+    		this.size=size;
+    		this.color=color;
+    		this.language=language;
+    		this.outlook=outlook;
+    		this.RAM=RAM;
+    		this.ROM=ROM;
+    		this.system=system;
+    		this.calls=function(){
+    			alert('打电话');
+    		}
+    		this.msg=function(){
+                alert('发短信');
+    		}
+    		this.music=function(){
+                alert('听音乐');
+    		}
+
+    	}
+    	let Iphone8=new Iphone('Iphone8','6.0英寸','red','english&chinese','metal','512G','8G','IOS');
+    	console.log(Iphone8);
+    	console.log(Iphone8.size);
+    	// alert(Iphone8.music());  // 听音乐   undefined
+    	Iphone8.music();
+    	// 遍历对象的属性 
+    	for(let i in Iphone8){
+            console.log(i);   //i 表示属性名
+            console.log(`${i}---${Iphone8[i]}`);
+    	}
+
+    	//json 创建对象  属性:值,
+    	let iphone8={
+    		brand : 'iphone8',
+    		'color': 'red',
+    		"size" : '6.0英寸',
+    		outlook : 'metal',
+    		calls : function(){
+    			alert('打电话')
+    		},
+    	}
+    	console.log(iphone8);
+    	iphone8.calls();
+
+    </script>
+	
+</body>
+</html>

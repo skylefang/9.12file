@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>传参调用</title>
+</head>
+<body>
+	<script>
+		function Person(name,age,sex){
+			this.name=name;
+			this.age=age;
+			this.sex=sex;
+			this.brain=`${this.name}脑子`;
+			this.say=function(value){
+				alert(value);
+			}
+			this.speech=function(value){
+				this.say(value);
+			}
+			this.study=function(){
+				alert(this.brain);
+			}
+		}
+		let zhangsan=new Person('zhangsan','18');
+		zhangsan.speech('演讲');
+		zhangsan.study();
+
+	</script>
+</body>
+</html>
